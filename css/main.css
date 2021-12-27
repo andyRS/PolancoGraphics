@@ -863,8 +863,8 @@ button {
   padding-bottom: 20px;
   color: #5543ca;
   background: linear-gradient(to right, #1ac2ea 0%, #0a0a0a 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  --webkit-background-clip: text;
+  --webkit-text-fill-color: transparent;
 }
 
 .contact-form .form-field{
@@ -955,4 +955,18 @@ button {
   font-weight: 400;
   text-align: justify;
   color: #000;
+}
+
+.developers a{
+  display: block;
+  text-decoration: none;
+  font-size: 12px;
+  color: white;
+  text-align: center;
+  margin-top: 15px;
+  transition: 300ms all;
+}
+
+.developers a:hover{
+  color: #ccc;
 }
