@@ -394,8 +394,8 @@
 
     .logo img {
         width: 80%;
-        top: -56px;
-        left: -45px;
+        top: -24px;
+        left: -57px;
     }
 
     .cont-menu ul li {
@@ -414,6 +414,8 @@
 
     #services {
         top: 1000px;
+        margin-bottom: 553px;
+        margin-top: 150px;
     }
 
     .encabezado-portafolio {
@@ -436,12 +438,25 @@
         font-size: 20px;
     }
 
+    #trabajo {
+        width: 96%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    #logodestacar {
+        width: 461px;
+        height: 715px;
+    }
+
     #sobre-mi .h3::after {
         width: 37%;
     }
 
     .logo-footer img {
-        left: 34px;
+        left: 28px;
     }
 
     .encabezo-prj-footer {
@@ -461,5 +476,7 @@
         top: 3px;
         left: 115px;
     }
+
+
 }
 
