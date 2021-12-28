@@ -389,7 +389,7 @@
 
 @media(max-width: 551px){
     body{
-        overflow-x: hidden;
+        overflow-y: hidden;
     }
 
     .logo img {
