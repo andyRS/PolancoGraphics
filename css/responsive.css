@@ -388,22 +388,40 @@
 }
 
 @media(max-width: 551px){
+    body{
+        overflow-x: hidden;
+    }
+
     .logo img {
-        width: 78%;
-        top: -50px;
-        left: -60px;
+        width: 80%;
+        top: -56px;
+        left: -45px;
+    }
+
+    .cont-menu ul li {
+        font-size: 16px;
+        padding: 22px 62px;
     }
 
     #content {
-        top: 431px;
+        height: auto;
+        margin-bottom: 238px;
+    }
+
+    .experienciaDiseño img{
+        display: none;
     }
 
     #services {
-        top: 472px;
+        top: 600px;
     }
 
     .encabezado-portafolio {
-        top: 435px;
+        top: 479px;
+    }
+
+    #paginacion-01 {
+        top: 198px;
     }
 
     #slider-contenedor, .contenido-slider{
