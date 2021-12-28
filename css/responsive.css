@@ -1,178 +1,138 @@
-
-
+ 
 /*Responsive del Header y el menu*/
 @media(max-width: 1391px){
-    .nav-menu  {
+    .nav-menu {
         margin-right: 0px;
-    }
+   }
 }
-
-
-
 @media(max-width: 1351px){
     .nav-menu {
         position: relative;
         left: 642px;
         top: -171px;
-    }
-
+   }
     .logoP img {
         width: 13%;
         position: relative;
         top: -57px;
         left: -16px;
-    }
+   }
 }
-
-
 @media(max-width: 1288px){
     .nav-menu {
         left: 570px;
-    }
-
+   }
     .logoP img {
         top: -59px;
-    }
+   }
 }
-
-
-
 @media(max-width: 1220px){
     .nav-menu {
         left: 479px;
-    }
+   }
 }
-
-
 @media(max-width: 1123px){
     .nav-menu {
         left: 394px;
-    }
+   }
 }
-
 @media(max-width: 1040px){
     .nav-menu {
         left: 341px;
-    }
-
+   }
     .nav-menu-item {
         font-size: 16px;
-    }
-
+   }
     .logo img {
         width: 44%;
-    }
+   }
 }
-
 @media(max-width: 980px){
     .nav-menu {
         left: 297px;
-    }
-}
-
-@media(max-width: 940px){
-   .nav ul li{
-       display: none;
    }
-   
+}
+@media(max-width: 940px){
+    .nav ul li{
+        display: none;
+   }
     .logoP img {
         display: none;
-    }
-
+   }
     .logo img {
         width: 36%;
         position: relative;
         top: -19px;
-    }
-
-    /*Estilos para JS del menu responsivo */
-
-.active{
-    transform: translate(-600px);
-  }
-
-  .opactiy{
-      background-color: rgba(0,0,0,0.5);
-      transition: all .5s ease;
-  }
-  
-/*Estilos para menu-Responsivo / Inicio con el icono */
-.menu-responsivo-icono {
-    display: block;
-    margin: 40px 50px;
-    position: relative;
-    z-index: 10;
-    top: -66px;
-    
-}
-
-.menu-responsivo-icono img {
-	vertical-align: top;
-    display: block;
-	width: 59px;
-	cursor: pointer;
-	position: relative;
-	top: 51px;
-}
-
-  
-  .cont-menu{
-      display: block;
-      background-color: rgb(42, 42, 42);
-      box-shadow: 2px 0px 5px 2px rgb(66, 66, 66);
-      width: 400px;
-      height: 100vh;
-      position: absolute;
-      top: 0;
-      left: 0;
-      transition: all .5s ease;
-  }
-  
-  /*Estilos para el listado del menu */
-  .cont-menu ul{
-    padding: 100px 0px 20px 0px;
-    list-style: none;
-  }
-  
-  .cont-menu ul li {
-	color: white;
-	display: block;
-	font-size: 20px;
-	text-decoration: none;
-	padding: 23px 50px;
-    cursor: pointer;
-}
-  
-  .cont-menu ul li:hover{
-    background-color: rgb(228,228,228);
-    color: rgb(42,42,42);
-   
    }
-
-
+   /*Estilos para JS del menu responsivo */
+    .active{
+        transform: translate(-600px);
+   }
+    .opactiy{
+        background-color: rgba(0,0,0,0.5);
+        transition: all .5s ease;
+   }
+   /*Estilos para menu-Responsivo / Inicio con el icono */
+    .menu-responsivo-icono {
+        display: block;
+        margin: 40px 50px;
+        position: relative;
+        z-index: 10;
+        top: -66px;
+   }
+    .menu-responsivo-icono img {
+        vertical-align: top;
+        display: block;
+        width: 59px;
+        cursor: pointer;
+        position: relative;
+        top: 51px;
+   }
+    .cont-menu{
+        display: block;
+        background-color: rgb(42, 42, 42);
+        box-shadow: 2px 0px 5px 2px rgb(66, 66, 66);
+        width: 400px;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: all .5s ease;
+   }
+   /*Estilos para el listado del menu */
+    .cont-menu ul{
+        padding: 100px 0px 20px 0px;
+        list-style: none;
+   }
+    .cont-menu ul li {
+        color: white;
+        display: block;
+        font-size: 20px;
+        text-decoration: none;
+        padding: 23px 50px;
+        cursor: pointer;
+   }
+    .cont-menu ul li:hover{
+        background-color: rgb(228,228,228);
+        color: rgb(42,42,42);
+   }
 }
-
 /*Responsive servicios*/
 @media(max-width: 1350px){
     .services {
         left: 187px;
-    }
+   }
 }
-
 @media(max-width: 1215px){
     .services {
         left: 157px;
-        
-    }
+   }
 }
-
-
 @media(max-width: 1088px){
     .services {
         left: 107px;
-    }
+   }
 }
-
 @media(max-width: 979px){
     .list-services-1, .list-services-2 {
         display: block;
@@ -183,171 +143,133 @@
         margin: 0px auto;
         padding: 30px;
         border-radius: 10px;
-        
-    }
+   }
     .list-services-1 {
-        left: -94px;   
-    }
-
+        left: -94px;
+   }
     .list-services-2 {
         display: block;
         margin-top: 20px;
         margin-bottom: 50px;
         position: relative;
         left: -94px;
-    }
-
-    /*Responsive Trabajos*/
-
+   }
+   /*Responsive Trabajos*/
     .encabezado-portafolio {
         top: 480px;
-    }
-
+   }
     #content {
         width: 97%;
         height: auto;
         top: 474px;
-       
-    }
-
+   }
     #paginacion-01 {
         top: 436px;
-    }
-
+   }
     .experienciaDiseño img {
         width: 93%;
-    }
-
+   }
     .encabezado-h3-experiencia {
         display: block;
-    }
-
+   }
     #sobre-mi .h3::after {
         width: 26%;
         height: 6px;
-    }
-
-
-    /*Responsive Footer*/
+   }
+   /*Responsive Footer*/
     .logo-footer img {
         width: 60%;
         display: block;
         position: relative;
         top: 84px;
         left: -20px;
-    }
-
-
+   }
     .proyectos-realizar-p {
         width: 90%;
         display: block;
         position: relative;
         left: -294px;
         top: 80px;
-    }
-
+   }
     .clientes-mundo img {
         width: 100%;
         border-radius: 20px;
         position: relative;
         top: -139px;
         left: 700px;
-    }
-
+   }
     .encabezo-prj-footer {
         left: -261px;
         font-size: 18px;
         top: 84px;
-    }
-
+   }
     .clientes-mundo-p {
         font-size: 16px;
         top: -177px;
         left: 715px;
-    }
-
+   }
     .politicas {
         display: block;
         width: 24%;
         position: relative;
         left: -65px;
         top: 53px;
-    }
-
+   }
     .developers a {
         position: relative;
         top: 115px;
         left: -417px;
-    }
-
+   }
     .wrap-footer {
         overflow: hidden;
-    }
-
-
+   }
 }
-
 @media(max-width: 943px){
     #services {
         top: 395px;
         height: 900px;
-    }
+   }
 }
-
-
-
 /*Responsive Trabajos*/
-
 @media(max-width: 1465px){
     #content {
-       height: auto;
-    }
+        height: auto;
+   }
 }
-
 @media(max-width: 661px){
     .logo img {
         width: 59%;
         position: relative;
         top: -47px;
         left: -66px;
-    }
-
+   }
     .cont-menu {
         width: 303px;
-    }
-
+   }
     .cont-menu ul li {
         font-size: 18px;
         padding: 21px 50px;
-        
-    }
-
+   }
     .services {
         left: 107px;
         width: 80%;
-    }
-
+   }
     #footer{
         height: 1000px;
-    }
-
+   }
     #logodestacar {
         width: 499px;
         height: 785px;
-    }
-
-    .encabezado-h3-experiencia {  
+   }
+    .encabezado-h3-experiencia {
         font-size: 23px;
-    }
-
+   }
     .logo-footer img {
         width: 80%;
         top: -23px;
         left: 86px;
         margin: 0px auto;
-    }
-
-
+   }
     .proyectos-realizar-p {
         width: 100%;
         display: block;
@@ -355,118 +277,92 @@
         position: relative;
         left: 173px;
         top: -74px;
-    }
-
+   }
     .encabezo-prj-footer {
         left: 196px;
         font-size: 15px;
         top: -50px;
-    }
-
+   }
     .clientes-mundo {
         width: 70%;
         position: relative;
-    }
-
+   }
     .clientes-mundo img {
         width: 100%;
         top: 16px;
         left: 135px;
-    }
-
+   }
     .clientes-mundo-p {
         font-size: 18px;
         top: 0;
         left: 233px;
         margin: 0px auto;
         display: block;
-    }
-
+   }
     .politicas{
         display: none;
-    }
+   }
 }
-/*
 @media(max-width: 551px){
     .logo img {
         width: 80%;
         top: -24px;
         left: -57px;
-    }
-
+   }
     .cont-menu ul li {
         font-size: 16px;
         padding: 22px 62px;
-    }
-
+   }
     #content {
         height: auto;
         margin-bottom: 238px;
-    }
-
+   }
     .experienciaDiseño img{
         display: none;
-    }
-
+   }
     .encabezado-portafolio {
         top: 479px;
-    }
-
+   }
     #paginacion-01 {
         top: 198px;
-    }
-
+   }
     #slider-contenedor, .contenido-slider{
         display: none;
-    }
-
+   }
     .list-services-1, .list-services-2 {
         width: 82%;
-    }
-
+   }
     .encabezado-h3-experiencia {
         font-size: 20px;
-    }
-
+   }
     #trabajo {
         width: 96%;
         margin-top: 20px;
         margin-bottom: 20px;
         margin-left: 10px;
         margin-right: 10px;
-    }
-
+   }
     #logodestacar {
         width: 461px;
         height: 715px;
-    }
-
+   }
     #sobre-mi .h3::after {
         width: 37%;
-    }
-
+   }
     .logo-footer img {
         left: 28px;
-    }
-
+   }
     .encabezo-prj-footer {
         left: 137px;
-    }
-
+   }
     .proyectos-realizar-p {
         left: 138px;
-    }
-
-
+   }
     .clientes-mundo-p {
         left: 165px;
-    }
-
+   }
     .clientes-mundo img {
         top: 3px;
         left: 115px;
-    }
-
-
+   }
 }
-*/
