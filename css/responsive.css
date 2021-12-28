@@ -386,7 +386,7 @@
         display: none;
     }
 }
-
+/*
 @media(max-width: 551px){
     .logo img {
         width: 80%;
@@ -406,11 +406,6 @@
 
     .experienciaDiseño img{
         display: none;
-    }
-
-    #services {
-        margin-bottom: 929px;
-        margin-top: 500px;
     }
 
     .encabezado-portafolio {
@@ -472,5 +467,6 @@
         left: 115px;
     }
 
-}
 
+}
+*/
