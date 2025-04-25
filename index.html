@@ -12,7 +12,6 @@
 
     <!-- CSS principal -->
     <link rel="stylesheet" href="css/main.css" />
-    
 
     <!-- Font Awesome -->
     <link
@@ -34,6 +33,7 @@
     <!-- Scripts JS -->
     <script src="js/main.js" defer></script>
     <script src="js/carousel.js" defer></script>
+    <script src="js/menu-mobile.js" defer></script>
     <script src="js/form-contacto.js" defer></script>
 
     <!-- Precargar video para mejor rendimiento -->
@@ -62,6 +62,7 @@
 
       <div class="header-content">
         <!-- Navegación mejorada -->
+        <!-- Sección del menú de navegación con atributos data-link añadidos -->
         <nav class="nav">
           <a href="#" class="logo nav-link">
             <img
@@ -72,21 +73,41 @@
           </a>
           <ul class="nav-menu">
             <li class="nav-menu-item active" data-url="inicio">
-              <a href="#" class="nav-menu-link nav-link">Inicio</a>
+              <a href="#inicio" class="nav-menu-link nav-link" data-link="true"
+                >Inicio</a
+              >
             </li>
             <li class="nav-menu-item" data-url="servicios">
-              <a href="#services" class="nav-menu-link nav-link">Servicios</a>
+              <a
+                href="#services"
+                class="nav-menu-link nav-link"
+                data-link="true"
+                >Servicios</a
+              >
             </li>
             <li class="nav-menu-item" data-url="portafolio">
-              <a href="#encabezado-portafolio" class="nav-menu-link nav-link"
+              <a
+                href="#encabezado-portafolio"
+                class="nav-menu-link nav-link"
+                data-link="true"
                 >Portafolio</a
               >
             </li>
             <li class="nav-menu-item" data-url="sobremi">
-              <a href="#about-me" class="nav-menu-link nav-link">Sobre mí</a>
+              <a
+                href="#about-me"
+                class="nav-menu-link nav-link"
+                data-link="true"
+                >Sobre mí</a
+              >
             </li>
             <li class="nav-menu-item" data-url="contacto">
-              <a href="#contacto" class="nav-menu-link nav-link">Contacto</a>
+              <a
+                href="#contacto"
+                class="nav-menu-link nav-link"
+                data-link="true"
+                >Contacto</a
+              >
             </li>
           </ul>
           <div class="menu-toggle" aria-label="Menú">
@@ -1166,9 +1187,13 @@
 
       <div class="politicas">
         <ul>
-          <li><a href="politica-privacidad.html">Políticas de privacidad</a></li>
+          <li>
+            <a href="politica-privacidad.html">Políticas de privacidad</a>
+          </li>
           <li><a href="aviso-legal.html">Aviso Legal</a></li>
-          <li><a href="terminos-condiciones.html">Términos y Condiciones</a></li>
+          <li>
+            <a href="terminos-condiciones.html">Términos y Condiciones</a>
+          </li>
         </ul>
       </div>
 
