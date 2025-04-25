@@ -70,6 +70,7 @@ function initPagination() {
   content1.style.opacity = "1";
   content1.style.transition = "opacity 0.5s ease";
   content2.style.opacity = "0";
+  content2.style.display = "none";
   content2.style.transition = "opacity 0.5s ease";
 
   function showPage(pageNum) {
@@ -79,11 +80,10 @@ function initPagination() {
     if (pageNum === 1) {
       // Ocultar página 2 y mostrar página 1
       content2.style.opacity = "0";
+      content2.style.display = "none";
 
       setTimeout(() => {
-        content2.style.display = "none";
         content1.style.display = "block";
-
         setTimeout(() => {
           content1.style.opacity = "1";
         }, 50);
@@ -129,7 +129,21 @@ function initPagination() {
 
 /**
  * Inicializa animaciones para elementos al cargar la página y al hacer scroll
+ *
+ *
  */
+
+function initNavMenu() {
+  // Funcionalidad para el menú de navegación
+  const menuToggle = document.querySelector(".menu-toggle");
+  const navMenu = document.querySelector(".nav-menu");
+
+  menuToggle.addEventListener("click", () => {
+    menuToggle.classList.toggle("active");
+    navMenu.classList.toggle("active");
+  });
+}
+
 function initAnimations() {
   // Detectar elementos para animar al hacer scroll
   const animatedElements = document.querySelectorAll(
