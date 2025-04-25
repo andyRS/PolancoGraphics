@@ -15,33 +15,47 @@ document.addEventListener("DOMContentLoaded", () => {
  * Inicializa el indicador de menú activo basado en la sección visible
  */
 function initMenuIndicator() {
-  const sections = document.querySelectorAll(".section");
+  const sections = document.querySelectorAll(".section, .projects-container");
   const menuItems = document.querySelectorAll(".nav-menu-item");
 
-  // Configurar el Intersection Observer para detectar secciones visibles
   const observerOptions = {
     root: null,
-    rootMargin: "0px",
-    threshold: 0.3,
+    rootMargin: "-150px 0px 0px 0px", // Aumentar un poco el margen
+    threshold: [0, 0.1, 0.2, 0.3], // Múltiples umbrales
   };
 
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
-        const currentId = entry.target.id;
+        // Obtener el ID de la sección
+        let currentId = entry.target.id;
+
+        // Manejar caso especial para portafolio
+        if (currentId === "") {
+          // Buscar un ID alternativo si el principal está vacío
+          currentId =
+            entry.target.closest(".projects-container").id || "portafolio";
+        }
 
         // Remover clase activa de todos los elementos
         menuItems.forEach((item) => item.classList.remove("active"));
 
-        // Agregar clase activa al elemento de menú correspondiente
-        const currentItem = Array.from(menuItems).find(
-          (item) =>
-            item.querySelector(".nav-menu-link").getAttribute("href") ===
-              `#${currentId}` || item.getAttribute("data-url") === currentId
-        );
+        // Encontrar y activar el elemento de menú correcto
+        const currentItem = Array.from(menuItems).find((item) => {
+          const link = item.querySelector(".nav-menu-link");
+          const href = link.getAttribute("href");
+          const dataUrl = item.getAttribute("data-url");
+
+          return (
+            href === `#${currentId}` ||
+            dataUrl === currentId ||
+            href === "#portafolio"
+          );
+        });
 
         if (currentItem) {
           currentItem.classList.add("active");
+          console.log("Sección actual:", currentId);
         }
       }
     });
@@ -49,7 +63,7 @@ function initMenuIndicator() {
 
   // Observar todas las secciones
   sections.forEach((section) => {
-    if (section.id) {
+    if (section.id || section.classList.contains("projects-container")) {
       observer.observe(section);
     }
   });
@@ -127,22 +141,31 @@ function initPagination() {
   });
 }
 
-/**
- * Inicializa animaciones para elementos al cargar la página y al hacer scroll
- *
- *
- */
-
 function initNavMenu() {
-  // Funcionalidad para el menú de navegación
-  const menuToggle = document.querySelector(".menu-toggle");
-  const navMenu = document.querySelector(".nav-menu");
+  const nav = document.querySelector(".nav");
 
-  menuToggle.addEventListener("click", () => {
-    menuToggle.classList.toggle("active");
-    navMenu.classList.toggle("active");
-  });
+  // Función para manejar el scroll
+  function handleScroll() {
+    if (window.scrollY > 50) {
+      nav.classList.add("fixed");
+      // Añadir padding al body para compensar el menú fijo
+      document.body.style.paddingTop = `${nav.offsetHeight}px`;
+    } else {
+      nav.classList.remove("fixed");
+      // Remover el padding cuando el menú vuelve a su posición original
+      document.body.style.paddingTop = "0";
+    }
+  }
+
+  // Agregar evento de scroll
+  window.addEventListener("scroll", handleScroll);
 }
+
+// Llamar a la función cuando el DOM esté cargado
+document.addEventListener("DOMContentLoaded", initNavMenu);
+
+// Agregar un listener de resize para manejar cambios de tamaño de pantalla
+window.addEventListener("resize", initNavMenu);
 
 function initAnimations() {
   // Detectar elementos para animar al hacer scroll
