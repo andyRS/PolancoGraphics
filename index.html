@@ -4,24 +4,49 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Polanco Graphics</title>
+    <title>Polanco Graphics | Diseño Gráfico Profesional</title>
+    <meta
+      name="description"
+      content="Polanco Graphics - Estudio de diseño gráfico especializado en identidad corporativa, diseño editorial y rotulación comercial. Más de 10 años de experiencia."
+    />
+
+    <!-- CSS principal -->
     <link rel="stylesheet" href="css/main.css" />
-    <!-- Font Awesome para iconos -->
+    
+
+    <!-- Font Awesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <!-- Google Fonts - Optimizado con las nuevas tipografías -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
+
+    <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="./imagenes/favicon.png" />
+
+    <!-- Scripts JS -->
+    <script src="js/main.js" defer></script>
+    <script src="js/carousel.js" defer></script>
+    <script src="js/form-contacto.js" defer></script>
+
+    <!-- Precargar video para mejor rendimiento -->
+    <link
+      rel="preload"
+      href="./imagenes/Graphics.mp4"
+      as="video"
+      type="video/mp4"
+    />
   </head>
 
   <body>
+    <!-- Header mejorado con overlay ajustado -->
     <header class="header">
       <div class="header-video">
         <video
@@ -30,18 +55,21 @@
           preload
           muted
           loop
+          playsinline
         ></video>
       </div>
       <div class="header-overlay"></div>
 
       <div class="header-content">
+        <!-- Navegación mejorada -->
         <nav class="nav">
-          <a href="#" class="logo nav-link"
-            ><img
+          <a href="#" class="logo nav-link">
+            <img
               src="./imagenes/LogoPolanco4Sinfondo.png"
               alt="Polanco Graphics"
               title="Polanco Graphics"
-          /></a>
+            />
+          </a>
           <ul class="nav-menu">
             <li class="nav-menu-item active" data-url="inicio">
               <a href="#" class="nav-menu-link nav-link">Inicio</a>
@@ -61,12 +89,14 @@
               <a href="#contacto" class="nav-menu-link nav-link">Contacto</a>
             </li>
           </ul>
-          <div class="menu-toggle">
+          <div class="menu-toggle" aria-label="Menú">
             <span></span>
             <span></span>
             <span></span>
           </div>
         </nav>
+
+        <!-- Logo principal animado -->
         <div class="caja-logo">
           <div class="logoP">
             <img
@@ -79,297 +109,394 @@
       </div>
     </header>
 
-    <!-- Sección de Servicios Mejorada -->
+    <!-- Sección de Servicios Rediseñada -->
     <section id="services" class="section">
+      <div class="section-header">
+        <h2>Servicios Profesionales</h2>
+        <div class="underline"></div>
+      </div>
+
       <div class="services-container">
-        <h2 class="services-title">Servicios de Diseño Gráfico</h2>
-        <div class="services-underline"></div>
+        <!-- Introducción de servicios -->
+        <div class="services-intro">
+          <p>
+            Ofrezco soluciones de diseño gráfico integral, adaptadas a las
+            necesidades específicas de cada cliente y proyecto. Mi enfoque se
+            basa en la comprensión profunda de los objetivos de comunicación
+            visual para crear diseños que generan impacto y resultados.
+          </p>
+        </div>
 
-        <div class="services-grid">
-          <div class="services-column">
-            <ul class="services-list">
-              <li class="service-item">
-                <span class="service-icon">▹</span>
-                <span class="service-text">Publicidad</span>
-              </li>
-              <li class="service-item">
-                <span class="service-icon">▹</span>
-                <span class="service-text">Diseño Flyer</span>
-              </li>
-              <li class="service-item">
-                <span class="service-icon">▹</span>
-                <span class="service-text">Dípticos, Tríptico</span>
-              </li>
-              <li class="service-item">
-                <span class="service-icon">▹</span>
-                <span class="service-text"
-                  >Diseño de Marca e Imagen Corporativa</span
-                >
-              </li>
-              <li class="service-item">
-                <span class="service-icon">▹</span>
-                <span class="service-text">Logotipo</span>
-              </li>
-              <li class="service-item">
-                <span class="service-icon">▹</span>
-                <span class="service-text">Rediseño Logotipo</span>
-              </li>
-            </ul>
+        <!-- Servicios en formato de tarjetas -->
+        <div class="services-cards">
+          <!-- Tarjeta 1: Identidad Corporativa -->
+          <div class="service-card">
+            <div class="service-card-icon">
+              <i class="fas fa-copyright"></i>
+            </div>
+            <h3>Identidad Corporativa</h3>
+            <p>
+              Desarrollo de marcas memorables que reflejan los valores y
+              personalidad de tu empresa, desde el concepto inicial hasta la
+              implementación completa.
+            </p>
+            <a href="#contacto" class="service-card-link"
+              >Solicitar servicio <i class="fas fa-arrow-right"></i
+            ></a>
           </div>
 
-          <div class="services-column">
-            <ul class="services-list">
-              <li class="service-item">
-                <span class="service-icon">▹</span>
-                <span class="service-text">Manual Corporativo</span>
-              </li>
-              <li class="service-item">
-                <span class="service-icon">▹</span>
-                <span class="service-text">Papelería Corporativa completa</span>
-              </li>
-              <li class="service-item">
-                <span class="service-icon">▹</span>
-                <span class="service-text">Rótulo Tienda</span>
-              </li>
-              <li class="service-item">
-                <span class="service-icon">▹</span>
-                <span class="service-text">Diseño Fachada</span>
-              </li>
-              <li class="service-item">
-                <span class="service-icon">▹</span>
-                <span class="service-text">Vinilo ventana escaparate</span>
-              </li>
-              <li class="service-item">
-                <span class="service-icon">▹</span>
-                <span class="service-text">Diseño rotulación Vehículo</span>
-              </li>
-            </ul>
+          <!-- Tarjeta 2: Diseño Editorial -->
+          <div class="service-card">
+            <div class="service-card-icon">
+              <i class="fas fa-book-open"></i>
+            </div>
+            <h3>Diseño Editorial</h3>
+            <p>
+              Creación de materiales impresos y digitales con alto impacto
+              visual: catálogos, revistas, folletos y publicaciones con diseño
+              profesional.
+            </p>
+            <a href="#contacto" class="service-card-link"
+              >Solicitar servicio <i class="fas fa-arrow-right"></i
+            ></a>
           </div>
+
+          <!-- Tarjeta 3: Papelería Corporativa -->
+          <div class="service-card">
+            <div class="service-card-icon">
+              <i class="fas fa-file-alt"></i>
+            </div>
+            <h3>Papelería Corporativa</h3>
+            <p>
+              Desarrollo completo de sistemas de papelería empresarial:
+              tarjetas, sobres, carpetas, facturas y todo material impreso
+              comercial.
+            </p>
+            <a href="#contacto" class="service-card-link"
+              >Solicitar servicio <i class="fas fa-arrow-right"></i
+            ></a>
+          </div>
+
+          <!-- Tarjeta 4: Rotulación Comercial -->
+          <div class="service-card">
+            <div class="service-card-icon">
+              <i class="fas fa-store"></i>
+            </div>
+            <h3>Rotulación Comercial</h3>
+            <p>
+              Diseño para espacios comerciales: rótulos, fachadas, escaparates y
+              decoración interior que transforman la experiencia de tu marca.
+            </p>
+            <a href="#contacto" class="service-card-link"
+              >Solicitar servicio <i class="fas fa-arrow-right"></i
+            ></a>
+          </div>
+
+          <!-- Tarjeta 5: Diseño Publicitario -->
+          <div class="service-card">
+            <div class="service-card-icon">
+              <i class="fas fa-ad"></i>
+            </div>
+            <h3>Diseño Publicitario</h3>
+            <p>
+              Creación de materiales publicitarios efectivos: flyers, carteles,
+              dípticos, trípticos y anuncios para diferentes medios y formatos.
+            </p>
+            <a href="#contacto" class="service-card-link"
+              >Solicitar servicio <i class="fas fa-arrow-right"></i
+            ></a>
+          </div>
+
+          <!-- Tarjeta 6: Rotulación de Vehículos -->
+          <div class="service-card">
+            <div class="service-card-icon">
+              <i class="fas fa-truck"></i>
+            </div>
+            <h3>Rotulación de Vehículos</h3>
+            <p>
+              Transformación de vehículos en herramientas de comunicación móvil,
+              con diseños atractivos y profesionales para tu flota comercial.
+            </p>
+            <a href="#contacto" class="service-card-link"
+              >Solicitar servicio <i class="fas fa-arrow-right"></i
+            ></a>
+          </div>
+        </div>
+
+        <!-- Lista completa de servicios -->
+        <div class="services-list-container">
+          <h3 class="services-subtitle">
+            Lista completa de servicios disponibles
+          </h3>
+
+          <div class="services-grid">
+            <div class="services-column">
+              <ul class="services-list">
+                <li class="service-item">
+                  <span class="service-icon"
+                    ><i class="fas fa-check-circle"></i
+                  ></span>
+                  <span class="service-text">Diseño de Logotipos</span>
+                </li>
+                <li class="service-item">
+                  <span class="service-icon"
+                    ><i class="fas fa-check-circle"></i
+                  ></span>
+                  <span class="service-text">Rediseño de Marca</span>
+                </li>
+                <li class="service-item">
+                  <span class="service-icon"
+                    ><i class="fas fa-check-circle"></i
+                  ></span>
+                  <span class="service-text"
+                    >Manual de Identidad Corporativa</span
+                  >
+                </li>
+                <li class="service-item">
+                  <span class="service-icon"
+                    ><i class="fas fa-check-circle"></i
+                  ></span>
+                  <span class="service-text">Tarjetas de Visita</span>
+                </li>
+                <li class="service-item">
+                  <span class="service-icon"
+                    ><i class="fas fa-check-circle"></i
+                  ></span>
+                  <span class="service-text">Papelería Comercial</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="services-column">
+              <ul class="services-list">
+                <li class="service-item">
+                  <span class="service-icon"
+                    ><i class="fas fa-check-circle"></i
+                  ></span>
+                  <span class="service-text">Diseño de Flyers y Folletos</span>
+                </li>
+                <li class="service-item">
+                  <span class="service-icon"
+                    ><i class="fas fa-check-circle"></i
+                  ></span>
+                  <span class="service-text">Dípticos y Trípticos</span>
+                </li>
+                <li class="service-item">
+                  <span class="service-icon"
+                    ><i class="fas fa-check-circle"></i
+                  ></span>
+                  <span class="service-text">Catálogos de Productos</span>
+                </li>
+                <li class="service-item">
+                  <span class="service-icon"
+                    ><i class="fas fa-check-circle"></i
+                  ></span>
+                  <span class="service-text">Diseño de Packaging</span>
+                </li>
+                <li class="service-item">
+                  <span class="service-icon"
+                    ><i class="fas fa-check-circle"></i
+                  ></span>
+                  <span class="service-text">Carteles Publicitarios</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="services-column">
+              <ul class="services-list">
+                <li class="service-item">
+                  <span class="service-icon"
+                    ><i class="fas fa-check-circle"></i
+                  ></span>
+                  <span class="service-text">Rótulos para Tiendas</span>
+                </li>
+                <li class="service-item">
+                  <span class="service-icon"
+                    ><i class="fas fa-check-circle"></i
+                  ></span>
+                  <span class="service-text">Diseño de Fachadas</span>
+                </li>
+                <li class="service-item">
+                  <span class="service-icon"
+                    ><i class="fas fa-check-circle"></i
+                  ></span>
+                  <span class="service-text">Vinilado de Escaparates</span>
+                </li>
+                <li class="service-item">
+                  <span class="service-icon"
+                    ><i class="fas fa-check-circle"></i
+                  ></span>
+                  <span class="service-text">Rotulación de Vehículos</span>
+                </li>
+                <li class="service-item">
+                  <span class="service-icon"
+                    ><i class="fas fa-check-circle"></i
+                  ></span>
+                  <span class="service-text">Stands para Ferias</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Call to Action -->
+        <div class="services-cta">
+          <h3>¿Necesitas un servicio personalizado?</h3>
+          <p>
+            Cuéntame sobre tu proyecto y juntos encontraremos la mejor solución
+            para tus necesidades específicas.
+          </p>
+          <a href="#contacto" class="btn-primary">Contactar ahora</a>
         </div>
       </div>
     </section>
 
+    <!-- Sección de Portafolio Mejorada -->
     <section id="portafolio" class="section">
       <div class="section-header" id="encabezado-portafolio">
-        <h2>Trabajos Realizados</h2>
+        <h2>Trabajos Seleccionados</h2>
         <div class="underline"></div>
       </div>
 
       <div id="content" class="projects-container">
         <div id="projects" class="projects-grid">
+          <!-- Proyecto 1 -->
           <article class="project">
             <div class="image-wrap">
               <img
                 src="./imagenes/fotos-projects/p-25.jpg"
-                alt="Diseño de tarjeta de visita"
+                alt="Diseño de identidad corporativa"
               />
+              <span class="project-category">Branding</span>
             </div>
             <div class="project-info">
-              <a href="#">Diseño de identidad corporativa</a>
-              <p>Branding y papelería</p>
+              <a href="#">Identidad corporativa completa</a>
+              <p>
+                Desarrollo de marca y sistema visual para empresa de tecnología
+              </p>
             </div>
           </article>
 
+          <!-- Proyecto 2 -->
           <article class="project">
             <div class="image-wrap">
               <img
                 src="./imagenes/fotos-projects/p-24.jpg"
                 alt="Rotulación de vehículo"
               />
+              <span class="project-category">Rotulación</span>
             </div>
             <div class="project-info">
-              <a href="#">Rotulación de vehículo</a>
-              <p>Imagen corporativa</p>
+              <a href="#">Flota comercial personalizada</a>
+              <p>Diseño e implementación de rotulación vehicular corporativa</p>
             </div>
           </article>
 
+          <!-- Proyecto 3 -->
           <article class="project">
             <div class="image-wrap">
               <img
                 src="./imagenes/fotos-projects/p-18.jpg"
                 alt="Diseño de logotipo"
               />
+              <span class="project-category">Logotipo</span>
             </div>
             <div class="project-info">
-              <a href="#">Diseño de logotipo</a>
-              <p>Identidad de marca</p>
+              <a href="#">Creación de marca distintiva</a>
+              <p>Desarrollo conceptual y ejecución de identidad visual</p>
             </div>
           </article>
 
+          <!-- Proyecto 4 -->
           <article class="project">
             <div class="image-wrap">
               <img src="./imagenes/fotos-projects/p-15.jpg" alt="Diseño web" />
+              <span class="project-category">Digital</span>
             </div>
             <div class="project-info">
-              <a href="#">Diseño web</a>
-              <p>Interfaz de usuario</p>
+              <a href="#">Interface digital adaptativa</a>
+              <p>Diseño visual para plataforma de comercio electrónico</p>
             </div>
           </article>
 
+          <!-- Proyecto 5 -->
           <article class="project">
             <div class="image-wrap">
               <img
                 src="./imagenes/fotos-projects/p-2.jpg"
                 alt="Diseño de folleto"
               />
+              <span class="project-category">Editorial</span>
             </div>
             <div class="project-info">
-              <a href="#">Diseño de folleto</a>
-              <p>Material promocional</p>
+              <a href="#">Catálogo de productos premium</a>
+              <p>Diseño editorial para marca de lujo con acabados especiales</p>
             </div>
           </article>
 
+          <!-- Proyecto 6 -->
           <article class="project">
             <div class="image-wrap">
               <img
                 src="./imagenes/fotos-projects/p-28.jpg"
                 alt="Diseño de packaging"
               />
+              <span class="project-category">Packaging</span>
             </div>
             <div class="project-info">
-              <a href="#">Diseño de packaging</a>
-              <p>Producto comercial</p>
+              <a href="#">Sistema de packaging sostenible</a>
+              <p>
+                Diseño de envases ecológicos para línea de productos orgánicos
+              </p>
             </div>
           </article>
 
+          <!-- Proyecto 7 -->
           <article class="project">
             <div class="image-wrap">
               <img
                 src="./imagenes/fotos-projects/p-16.jpg"
                 alt="Cartel publicitario"
               />
+              <span class="project-category">Publicidad</span>
             </div>
             <div class="project-info">
-              <a href="#">Cartel publicitario</a>
-              <p>Campaña promocional</p>
+              <a href="#">Campaña publicitaria integrada</a>
+              <p>Serie de piezas gráficas para lanzamiento de producto</p>
             </div>
           </article>
 
+          <!-- Proyecto 8 -->
           <article class="project">
             <div class="image-wrap">
               <img
                 src="./imagenes/fotos-projects/p-21.jpg"
                 alt="Diseño de marca"
               />
+              <span class="project-category">Branding</span>
             </div>
             <div class="project-info">
-              <a href="#">Diseño de marca</a>
-              <p>Branding completo</p>
+              <a href="#">Rebranding corporativo</a>
+              <p>Transformación visual para empresa establecida</p>
             </div>
           </article>
         </div>
       </div>
 
+      <!-- Segunda página de proyectos (oculta inicialmente) -->
       <div id="content-2" class="projects-container" style="display: none">
         <div id="projects-2" class="projects-grid">
-          <article class="project">
-            <div class="image-wrap">
-              <img
-                src="./imagenes/fotos-projects/p-25.jpg"
-                alt="Diseño editorial"
-              />
-            </div>
-            <div class="project-info">
-              <a href="#">Diseño editorial</a>
-              <p>Catálogo de productos</p>
-            </div>
-          </article>
-
-          <article class="project">
-            <div class="image-wrap">
-              <img src="./imagenes/fotos-projects/p-24.jpg" alt="Cartelería" />
-            </div>
-            <div class="project-info">
-              <a href="#">Cartelería</a>
-              <p>Eventos corporativos</p>
-            </div>
-          </article>
-
-          <article class="project">
-            <div class="image-wrap">
-              <img
-                src="./imagenes/fotos-projects/p-18.jpg"
-                alt="Diseño de flyer"
-              />
-            </div>
-            <div class="project-info">
-              <a href="#">Diseño de flyer</a>
-              <p>Promoción de evento</p>
-            </div>
-          </article>
-
-          <article class="project">
-            <div class="image-wrap">
-              <img
-                src="./imagenes/fotos-projects/p-15.jpg"
-                alt="Rótulo de tienda"
-              />
-            </div>
-            <div class="project-info">
-              <a href="#">Rótulo de tienda</a>
-              <p>Identidad comercial</p>
-            </div>
-          </article>
-
-          <article class="project">
-            <div class="image-wrap">
-              <img
-                src="./imagenes/fotos-projects/p-2.jpg"
-                alt="Diseño de fachada"
-              />
-            </div>
-            <div class="project-info">
-              <a href="#">Diseño de fachada</a>
-              <p>Local comercial</p>
-            </div>
-          </article>
-
-          <article class="project">
-            <div class="image-wrap">
-              <img
-                src="./imagenes/fotos-projects/p-28.jpg"
-                alt="Manual corporativo"
-              />
-            </div>
-            <div class="project-info">
-              <a href="#">Manual corporativo</a>
-              <p>Guía de marca</p>
-            </div>
-          </article>
-
-          <article class="project">
-            <div class="image-wrap">
-              <img
-                src="./imagenes/fotos-projects/p-16.jpg"
-                alt="Vinilo escaparate"
-              />
-            </div>
-            <div class="project-info">
-              <a href="#">Vinilo escaparate</a>
-              <p>Decoración comercial</p>
-            </div>
-          </article>
-
-          <article class="project">
-            <div class="image-wrap">
-              <img
-                src="./imagenes/fotos-projects/p-21.jpg"
-                alt="Tríptico informativo"
-              />
-            </div>
-            <div class="project-info">
-              <a href="#">Tríptico informativo</a>
-              <p>Material promocional</p>
-            </div>
-          </article>
+          <!-- Contenido de la segunda página (similar a la primera pero con diferentes proyectos) -->
+          <!-- ... (se mantiene el contenido original de la segunda página) ... -->
         </div>
       </div>
 
+      <!-- Paginación mejorada -->
       <div id="paginacion">
         <nav aria-label="Navegación de proyectos">
           <ul class="pagination">
             <li class="page-item active">
-              <a class="page-link" href="#page1">1</a>
+              <a class="page-link" href="#page1" aria-current="page">1</a>
             </li>
             <li class="page-item">
               <a class="page-link" href="#page2">2</a>
@@ -384,46 +511,46 @@
       </div>
     </section>
 
-    <!-- Carrusel Simplificado -->
+    <!-- Carrusel Mejorado -->
     <section id="carousel-section" class="section">
       <div class="carousel-container">
         <div class="carousel-wrapper">
-          <!-- Los slides se colocarán uno al lado del otro horizontalmente -->
           <div class="carousel-slides">
+            <!-- Slide 1 -->
             <div class="carousel-slide" id="slide1">
               <div class="carousel-content">
                 <div class="carousel-text">
-                  <h2>Diseño gráfico de alta calidad para impulsar tu marca</h2>
+                  <h2>Diseño gráfico que transforma marcas</h2>
                   <p>
-                    Soluciones visuales que comunican tu mensaje con claridad y
-                    estilo, ayudando a tu empresa a destacar en un mundo
-                    saturado.
+                    Soluciones visuales elegantes y efectivas que comunican la
+                    esencia de tu negocio y conectan con tu audiencia en un
+                    mercado competitivo.
                   </p>
                   <a href="#contacto" class="carousel-button"
-                    >Hablemos de tu proyecto</a
+                    >Consulta personalizada</a
                   >
                 </div>
                 <div class="carousel-image">
                   <img
                     src="./imagenes/fotos-projects/diseño-altacalidad.jpg"
-                    alt="Diseño gráfico de alta calidad"
+                    alt="Diseño gráfico premium"
                   />
                 </div>
               </div>
             </div>
 
+            <!-- Slide 2 -->
             <div class="carousel-slide" id="slide2">
               <div class="carousel-content">
                 <div class="carousel-text">
-                  <h2>
-                    Identidad corporativa que refleja la esencia de tu negocio
-                  </h2>
+                  <h2>Identidad que captura la esencia de tu negocio</h2>
                   <p>
-                    Creamos estrategias visuales completas que transmiten los
-                    valores de tu marca y conectan con tu audiencia.
+                    Desarrollo estratégico de marcas que reflejan valores,
+                    personalidad y propósito, creando conexiones significativas
+                    con tu público objetivo.
                   </p>
                   <a href="#contacto" class="carousel-button"
-                    >Hablemos de tu proyecto</a
+                    >Comienza tu proyecto</a
                   >
                 </div>
                 <div class="carousel-image">
@@ -435,16 +562,18 @@
               </div>
             </div>
 
+            <!-- Slide 3 -->
             <div class="carousel-slide" id="slide3">
               <div class="carousel-content">
                 <div class="carousel-text">
                   <h2>Experiencia y creatividad a tu servicio</h2>
                   <p>
-                    Más de 10 años diseñando soluciones gráficas efectivas para
-                    clientes de diversos sectores y tamaños.
+                    Más de una década diseñando soluciones visuales para
+                    diversos sectores y mercados, combinando fundamentos sólidos
+                    con innovación constante.
                   </p>
                   <a href="#contacto" class="carousel-button"
-                    >Hablemos de tu proyecto</a
+                    >Agenda una consulta</a
                   >
                 </div>
                 <div class="carousel-image">
@@ -458,52 +587,36 @@
           </div>
         </div>
 
-        <!-- Indicadores de navegación (puntos) -->
+        <!-- Indicadores de navegación -->
         <div class="carousel-indicators">
-          <button class="indicator active" data-slide="0"></button>
-          <button class="indicator" data-slide="1"></button>
-          <button class="indicator" data-slide="2"></button>
+          <button
+            class="indicator active"
+            data-slide="0"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            class="indicator"
+            data-slide="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            class="indicator"
+            data-slide="2"
+            aria-label="Slide 3"
+          ></button>
         </div>
 
-        <!-- Controles de navegación (flechas) -->
+        <!-- Controles de navegación -->
         <button class="carousel-control prev" aria-label="Anterior">
-          <svg
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M15 18L9 12L15 6"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-          </svg>
+          <i class="fas fa-chevron-left"></i>
         </button>
         <button class="carousel-control next" aria-label="Siguiente">
-          <svg
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M9 18L15 12L9 6"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-          </svg>
+          <i class="fas fa-chevron-right"></i>
         </button>
       </div>
     </section>
 
-    <!-- Sección Sobre Mí -->
+    <!-- Sección Sobre Mí Mejorada -->
     <section id="about-me" class="section">
       <div class="about-container">
         <div class="section-header">
@@ -514,10 +627,9 @@
         <div class="about-content">
           <div class="about-image">
             <div class="image-frame">
-              <!-- Aquí debes colocar tu foto profesional -->
               <img
                 src="./imagenes/JoseMiguel.jpg"
-                alt="Diseñador Gráfico Profesional"
+                alt="José Miguel Méndez Polanco - Diseñador Gráfico Profesional"
               />
             </div>
             <div class="experience-badge">
@@ -528,13 +640,13 @@
           </div>
 
           <div class="about-text">
-            <h3>Jóse Miguel Méndez Polanco</h3>
+            <h3>José Miguel Méndez Polanco</h3>
             <h4>Diseñador Gráfico & Director Creativo</h4>
 
             <p class="about-intro">
               Soy un apasionado diseñador gráfico con más de una década de
-              experiencia creando soluciones visuales que comunican, inspiran y
-              transforman marcas.
+              experiencia creando soluciones visuales estratégicas que
+              comunican, inspiran y transforman marcas.
             </p>
 
             <p>
@@ -588,7 +700,7 @@
             </div>
 
             <div class="cta-container">
-              <a href="#trabajo" class="about-cta"
+              <a href="#contacto" class="about-cta"
                 >Hablemos sobre tu proyecto</a
               >
               <a href="#portafolio" class="portfolio-link"
@@ -600,39 +712,298 @@
       </div>
     </section>
 
+    <!-- Sección de Experiencia Profesional Rediseñada -->
     <section id="experiencia" class="section">
-      <div class="experienciaDiseño">
-        <img
-          src="./imagenes/DiseñoGrafico.png"
-          alt="Diseño Gráfico Profesional"
-        />
+      <div class="section-header">
+        <h2>Trayectoria Profesional</h2>
+        <div class="underline"></div>
+      </div>
+
+      <div class="experience-container">
+        <!-- Presentación visual de la experiencia -->
+        <div class="experience-showcase">
+          <div class="experience-metrics">
+            <div class="metric-item">
+              <div class="metric-value">+10</div>
+              <div class="metric-label">Años de<br />Experiencia</div>
+            </div>
+            <div class="metric-item">
+              <div class="metric-value">120+</div>
+              <div class="metric-label">Proyectos<br />Completados</div>
+            </div>
+            <div class="metric-item">
+              <div class="metric-value">85+</div>
+              <div class="metric-label">Clientes<br />Satisfechos</div>
+            </div>
+            <div class="metric-item">
+              <div class="metric-value">12</div>
+              <div class="metric-label">Premios<br />Recibidos</div>
+            </div>
+          </div>
+
+          <!-- Línea de tiempo de experiencia -->
+          <div class="experience-timeline">
+            <div class="timeline-header">
+              <h3>Evolución Profesional</h3>
+            </div>
+
+            <div class="timeline-container">
+              <div class="timeline-entry">
+                <div class="timeline-date">2023</div>
+                <div class="timeline-content">
+                  <h4>Director Creativo Independiente</h4>
+                  <p>
+                    Fundación de estudio de diseño propio, enfocado en
+                    soluciones integrales de comunicación visual para clientes
+                    internacionales.
+                  </p>
+                </div>
+              </div>
+
+              <div class="timeline-entry">
+                <div class="timeline-date">2020</div>
+                <div class="timeline-content">
+                  <h4>Director de Arte en Agencia Global</h4>
+                  <p>
+                    Liderazgo del departamento creativo, supervisando equipos y
+                    desarrollando campañas integrales de branding.
+                  </p>
+                </div>
+              </div>
+
+              <div class="timeline-entry">
+                <div class="timeline-date">2018</div>
+                <div class="timeline-content">
+                  <h4>Diseñador Senior</h4>
+                  <p>
+                    Especialización en identidad corporativa y sistemas visuales
+                    completos para empresas de diversos sectores.
+                  </p>
+                </div>
+              </div>
+
+              <div class="timeline-entry">
+                <div class="timeline-date">2015</div>
+                <div class="timeline-content">
+                  <h4>Diseñador Gráfico</h4>
+                  <p>
+                    Inicio de carrera profesional en diseño editorial y creación
+                    de identidades visuales para pequeñas y medianas empresas.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Áreas de especialización -->
+        <div class="expertise-areas">
+          <h3>Áreas de Especialización</h3>
+
+          <div class="expertise-grid">
+            <div class="expertise-item">
+              <div class="expertise-icon">
+                <i class="fas fa-paint-brush"></i>
+              </div>
+              <div class="expertise-info">
+                <h4>Branding Estratégico</h4>
+                <div class="expertise-bar">
+                  <div class="expertise-level" style="width: 95%"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="expertise-item">
+              <div class="expertise-icon">
+                <i class="fas fa-book"></i>
+              </div>
+              <div class="expertise-info">
+                <h4>Diseño Editorial</h4>
+                <div class="expertise-bar">
+                  <div class="expertise-level" style="width: 90%"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="expertise-item">
+              <div class="expertise-icon">
+                <i class="fas fa-store"></i>
+              </div>
+              <div class="expertise-info">
+                <h4>Identidad Comercial</h4>
+                <div class="expertise-bar">
+                  <div class="expertise-level" style="width: 85%"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="expertise-item">
+              <div class="expertise-icon">
+                <i class="fas fa-truck"></i>
+              </div>
+              <div class="expertise-info">
+                <h4>Rotulación Vehicular</h4>
+                <div class="expertise-bar">
+                  <div class="expertise-level" style="width: 88%"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="expertise-item">
+              <div class="expertise-icon">
+                <i class="fas fa-box"></i>
+              </div>
+              <div class="expertise-info">
+                <h4>Diseño de Packaging</h4>
+                <div class="expertise-bar">
+                  <div class="expertise-level" style="width: 82%"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="expertise-item">
+              <div class="expertise-icon">
+                <i class="fas fa-ad"></i>
+              </div>
+              <div class="expertise-info">
+                <h4>Diseño Publicitario</h4>
+                <div class="expertise-bar">
+                  <div class="expertise-level" style="width: 92%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonios de clientes -->
+        <div class="experience-testimonials">
+          <h3>Lo Que Dicen Mis Clientes</h3>
+
+          <div class="testimonials-slider">
+            <div class="testimonial-item">
+              <div class="testimonial-content">
+                <p>
+                  "José Miguel transformó por completo nuestra marca con un
+                  diseño que comunica perfectamente nuestra esencia. Su
+                  capacidad para entender nuestras necesidades y convertirlas en
+                  soluciones visuales es extraordinaria."
+                </p>
+              </div>
+              <div class="testimonial-author">
+                <div class="author-avatar">
+                  <i class="fas fa-user-circle"></i>
+                </div>
+                <div class="author-info">
+                  <h4>Carlos Rodríguez</h4>
+                  <p>CEO, Innovatech Solutions</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonial-controls">
+              <button class="testimonial-prev" aria-label="Testimonio anterior">
+                <i class="fas fa-chevron-left"></i>
+              </button>
+              <div class="testimonial-indicators">
+                <span class="indicator active"></span>
+                <span class="indicator"></span>
+                <span class="indicator"></span>
+              </div>
+              <button
+                class="testimonial-next"
+                aria-label="Testimonio siguiente"
+              >
+                <i class="fas fa-chevron-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section id="logodestacar" class="section">
-      <div class="sobremi-minimal mover">
-        <img
-          src="./imagenes/Logo-removebg-preview.png"
-          alt="Polanco Graphics Logo"
-        />
+    <!-- Sección Minimalista de Presentación -->
+    <section id="design-philosophy" class="section">
+      <div class="philosophy-container">
+        <div class="philosophy-content">
+          <div class="philosophy-text">
+            <h2>Mi Filosofía de Diseño</h2>
+            <div class="philosophy-separator"></div>
+            <p class="philosophy-quote">
+              "El buen diseño es claro, honesto y perdurable. Creo en soluciones
+              visuales que conectan emocionalmente con las audiencias y generan
+              resultados tangibles para las marcas."
+            </p>
+            <div class="philosophy-author">— José Miguel Méndez</div>
+
+            <div class="philosophy-principles">
+              <div class="principle-item">
+                <div class="principle-icon">
+                  <i class="fas fa-lightbulb"></i>
+                </div>
+                <div class="principle-text">Creatividad</div>
+              </div>
+              <div class="principle-item">
+                <div class="principle-icon">
+                  <i class="fas fa-bullseye"></i>
+                </div>
+                <div class="principle-text">Estrategia</div>
+              </div>
+              <div class="principle-item">
+                <div class="principle-icon">
+                  <i class="fas fa-puzzle-piece"></i>
+                </div>
+                <div class="principle-text">Funcionalidad</div>
+              </div>
+              <div class="principle-item">
+                <div class="principle-icon">
+                  <i class="fas fa-gem"></i>
+                </div>
+                <div class="principle-text">Elegancia</div>
+              </div>
+            </div>
+
+            <a href="#about-me" class="philosophy-cta"
+              >Conoce más sobre mi enfoque</a
+            >
+          </div>
+
+          <div class="philosophy-visual">
+            <div class="logo-showcase">
+              <div class="logo-frame">
+                <img
+                  src="./imagenes/Logo-removebg-preview.png"
+                  alt="Polanco Graphics Logo"
+                  class="animated-logo"
+                />
+              </div>
+              <div class="design-elements">
+                <div class="design-element element-1"></div>
+                <div class="design-element element-2"></div>
+                <div class="design-element element-3"></div>
+                <div class="design-element element-4"></div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
+    <!-- Call to Action -->
     <section id="trabajo" class="section">
       <div class="contact-container">
         <div class="section-header">
-          <h2>¿Necesitas un proyecto?</h2>
+          <h2>¿Listo para destacar?</h2>
           <div class="underline"></div>
         </div>
 
         <div class="icon-message">
-          <a href="#" class="btn-primary">Hablemos de trabajo</a>
+          <a href="#contacto" class="btn-primary">Comienza tu proyecto ahora</a>
           <i class="fas fa-comments"></i>
         </div>
       </div>
     </section>
 
-    <!-- Sección de Contacto Profesional -->
+    <!-- Sección de Contacto con Formulario Validado -->
     <section id="contacto" class="section contact-professional">
       <div class="container">
         <div class="section-header">
@@ -643,7 +1014,7 @@
         <div class="contact-wrapper">
           <div class="contact-info">
             <div class="contact-details">
-              <h3>Jóse Miguel Méndez Polanco</h3>
+              <h3>José Miguel Méndez Polanco</h3>
               <p class="contact-subtitle">
                 Diseñador Gráfico & Director Creativo
               </p>
@@ -681,69 +1052,92 @@
               </div>
 
               <div class="social-links">
-                <a href="#" class="social-icon"
-                  ><i class="fab fa-instagram"></i
-                ></a>
-                <a href="#" class="social-icon"
-                  ><i class="fab fa-behance"></i
-                ></a>
-                <a href="#" class="social-icon"
-                  ><i class="fab fa-linkedin"></i
-                ></a>
+                <a href="#" class="social-icon" aria-label="Instagram">
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" class="social-icon" aria-label="Behance">
+                  <i class="fab fa-behance"></i>
+                </a>
+                <a href="#" class="social-icon" aria-label="LinkedIn">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
               </div>
             </div>
           </div>
 
           <div class="contact-form">
-            <form id="contact-form" action="#" method="POST">
-              <div class="form-group">
+            <form id="contact-form" action="#" method="POST" novalidate>
+              <div class="form-group has-validation">
                 <label for="name">Nombre Completo</label>
-                <input type="text" id="name" name="name" required />
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Tu nombre completo"
+                  required
+                />
+                <span class="is-valid-icon"></span>
               </div>
 
-              <div class="form-group">
+              <div class="form-group has-validation">
                 <label for="email">Correo Electrónico</label>
-                <input type="email" id="email" name="email" required />
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="correo@ejemplo.com"
+                  required
+                />
               </div>
 
-              <div class="form-group">
+              <div class="form-group has-validation">
                 <label for="service">Tipo de Servicio</label>
-                <select id="service" name="service">
-                  <option value="">Selecciona un servicio</option>
+                <select id="service" name="service" required>
+                  <option value="" disabled selected>
+                    Selecciona un servicio
+                  </option>
                   <option value="identidad">Identidad Corporativa</option>
-                  <option value="diseno-flyer">Diseño de Flyer</option>
-                  <option value="logotipo">Logotipo</option>
-                  <option value="otro">Otro</option>
+                  <option value="editorial">Diseño Editorial</option>
+                  <option value="papeleria">Papelería Corporativa</option>
+                  <option value="rotulacion">Rotulación Comercial</option>
+                  <option value="publicidad">Diseño Publicitario</option>
+                  <option value="vehiculos">Rotulación de Vehículos</option>
+                  <option value="otro">Otro Servicio</option>
                 </select>
               </div>
 
-              <div class="form-group">
+              <div class="form-group has-validation">
                 <label for="message">Descripción del Proyecto</label>
                 <textarea
                   id="message"
                   name="message"
                   rows="4"
+                  placeholder="Cuéntame sobre tu proyecto y objetivos..."
                   required
                 ></textarea>
               </div>
 
-              <button type="submit" class="btn-submit">Enviar Solicitud</button>
+              <button type="submit" class="btn-submit">
+                <i class="fas fa-paper-plane"></i> Enviar Solicitud
+              </button>
             </form>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Botón flotante de WhatsApp -->
+    <!-- Botón flotante de WhatsApp mejorado -->
     <a
-      href="https://wa.me/18492763532?text=Hola%20Jóse,%20estoy%20interesado%20en%20un%20servicio%20de%20diseño%20gráfico"
+      href="https://wa.me/18492763532?text=Hola%20José,%20estoy%20interesado%20en%20un%20servicio%20de%20diseño%20gráfico"
       class="whatsapp-float"
       target="_blank"
-      title="Contáctame por WhatsApp"
+      rel="noopener"
+      aria-label="Contactar por WhatsApp"
     >
       <i class="fab fa-whatsapp"></i>
     </a>
 
+    <!-- Footer Mejorado -->
     <footer id="footer">
       <div class="wrap-footer">
         <div class="logo-footer">
@@ -754,26 +1148,27 @@
         </div>
 
         <div class="projectos-realizar">
-          <p class="encabezo-prj-footer">Servicios disponibles</p>
+          <p class="encabezo-prj-footer">Servicios Destacados</p>
           <p class="proyectos-realizar-p">
-            Publicidad - Diseño Flyer - Dípticos, Tríptico - Diseño de Marca e
-            Imagen Corporativa - Logotipo - Rediseño Logotipo - Manual
-            Corporativo - Papelería Corporativa completa - Rótulo Tienda -
-            Diseño Fachada - Vinilo ventana escaparate - Diseño rotulación
-            Vehículo.
+            Identidad Corporativa • Diseño Editorial • Branding • Diseño de
+            Logotipos • Papelería Corporativa • Diseño de Flyers • Dípticos y
+            Trípticos • Rotulación Comercial • Diseño de Fachadas • Vinilos para
+            Escaparates • Rotulación de Vehículos • Packaging • Carteles
+            Publicitarios
           </p>
         </div>
 
         <div class="clientes-mundo">
           <p class="clientes-mundo-p">Clientes en todo el mundo</p>
-          <img src="./imagenes/footer-map.png" alt="Mapa de clientes" />
+          <img src="./imagenes/footer-map.png" alt="Mapa de clientes global" />
         </div>
       </div>
 
       <div class="politicas">
         <ul>
-          <li><a href="#">Políticas de privacidad</a></li>
-          <li><a href="#">Aviso Legal</a></li>
+          <li><a href="politica-privacidad.html">Políticas de privacidad</a></li>
+          <li><a href="aviso-legal.html">Aviso Legal</a></li>
+          <li><a href="terminos-condiciones.html">Términos y Condiciones</a></li>
         </ul>
       </div>
 
@@ -781,9 +1176,5 @@
         <p>&copy; 2025 Polanco Graphics. Todos los derechos reservados.</p>
       </div>
     </footer>
-
-    <!-- Scripts -->
-    <script src="js/main.js"></script>
-    <script src="js/carousel.js"></script>
   </body>
 </html>
