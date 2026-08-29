@@ -2,8 +2,8 @@
 @import "tailwindcss";
 
 @theme {
-  --color-acid: #d9ff43;
-  --color-violet: #6957ff;
+  --color-acid: #10c0e0;
+  --color-violet: #007fae;
   --font-sans: "Manrope", ui-sans-serif, system-ui, sans-serif;
   --font-display: "Syne", ui-sans-serif, system-ui, sans-serif;
   --font-serif: "Instrument Serif", Georgia, serif;
@@ -56,11 +56,11 @@
   input,
   textarea,
   select {
-    outline-color: #d9ff43;
+    outline-color: #10c0e0;
   }
 
   ::selection {
-    background: #d9ff43;
+    background: #10c0e0;
     color: #080808;
   }
 }
@@ -76,7 +76,7 @@
   bottom: -0.45rem;
   left: 0;
   height: 1px;
-  background: #d9ff43;
+  background: #10c0e0;
   content: "";
   transform: scaleX(0);
   transform-origin: right;
@@ -112,7 +112,7 @@
   right: 20%;
   width: 28rem;
   height: 28rem;
-  background: rgba(105, 87, 255, 0.22);
+  background: rgba(0, 127, 174, 0.25);
 }
 
 .orb-two {
@@ -120,7 +120,7 @@
   left: 12%;
   width: 24rem;
   height: 24rem;
-  background: rgba(217, 255, 67, 0.1);
+  background: rgba(16, 192, 224, 0.14);
 }
 
 .hero-title {
@@ -206,13 +206,13 @@
 
 .service-card:nth-child(2) {
   grid-column: span 5;
-  background: #6957ff;
+  background: #007fae;
   color: #fff;
 }
 
 .service-card:nth-child(3) {
   grid-column: span 5;
-  background: #d9ff43;
+  background: #10c0e0;
   color: #090909;
 }
 
@@ -223,12 +223,12 @@
 }
 
 .service-card:nth-child(5) {
-  background: #dcd7ff;
+  background: #d9f6fb;
   color: #090909;
 }
 
 .service-card:nth-child(6) {
-  background: #17bde7;
+  background: #68d8ea;
   color: #071b21;
 }
 
@@ -296,7 +296,7 @@
 .field input:focus,
 .field select:focus,
 .field textarea:focus {
-  border-color: #d9ff43;
+  border-color: #10c0e0;
 }
 
 .field input::placeholder,

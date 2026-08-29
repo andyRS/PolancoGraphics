@@ -202,8 +202,8 @@ function Hero() {
 
       <div className="relative mx-auto flex min-h-screen w-[min(92vw,1500px)] flex-col justify-end pb-12 pt-32 lg:pb-16">
         <div className="mb-8 flex items-center justify-between text-[9px] font-bold uppercase tracking-[0.18em] text-white/45" data-reveal>
-          <span>Creativo independiente / Santo Domingo</span>
-          <span className="hidden sm:block">Disponible globalmente · UTC−04</span>
+          <span>Diseñador independiente / Dirección visual</span>
+          <span className="hidden sm:block">Disponible para proyectos seleccionados</span>
         </div>
 
         <div className="relative grid items-end gap-8 lg:grid-cols-[1.35fr_0.65fr]">
@@ -230,8 +230,6 @@ function Hero() {
                 <span>José Miguel<br />Méndez Polanco</span><span className="text-right text-white/45">Dirección creativa<br />y ejecución</span>
               </div>
             </div>
-            <div className="absolute -left-5 top-[16%] rotate-[-6deg] rounded-xl bg-acid px-5 py-4 text-black shadow-2xl sm:-left-12"><span className="block text-[8px] font-black uppercase tracking-[0.2em]">Enfoque</span><strong className="font-display text-2xl tracking-[-0.06em]">Sistemas de marca</strong></div>
-            <div className="absolute -right-3 bottom-[19%] rotate-3 rounded-xl bg-violet px-5 py-4 text-white shadow-2xl sm:-right-10"><span className="block text-[8px] font-black uppercase tracking-[0.2em] text-white/60">Ubicación</span><strong className="font-display text-2xl tracking-[-0.06em]">Rep. Dominicana</strong></div>
           </div>
         </div>
       </div>
