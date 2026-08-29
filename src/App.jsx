@@ -211,7 +211,7 @@ function Hero() {
             <p className="mb-4 flex items-center gap-3 text-[10px] font-black uppercase tracking-[0.24em] text-acid"><span className="size-2 animate-pulse rounded-full bg-acid" /> Diseñador gráfico senior</p>
             <h1 className="hero-title font-display text-[clamp(4.7rem,11.8vw,12.4rem)] font-medium leading-[0.73] tracking-[-0.085em]">
               Impacto
-              <span className="ml-[0.14em] inline-block font-serif italic text-transparent [-webkit-text-stroke:1px_rgba(255,255,255,0.55)]">visual</span>
+              <span className="ml-[0.14em] inline-block font-display font-medium not-italic tracking-[-0.08em] text-transparent [-webkit-text-stroke:1px_rgba(255,255,255,0.55)]">visual</span>
               <br />por diseño<span className="text-acid">.</span>
             </h1>
             <div className="mt-8 grid max-w-3xl gap-7 border-t border-white/15 pt-6 sm:grid-cols-[1fr_auto] sm:items-end">
@@ -287,7 +287,7 @@ function SelectedWork() {
       <div className="mx-auto w-[min(92vw,1500px)]">
         <div className="mb-20 grid gap-8 border-t border-black/25 pt-6 lg:grid-cols-[0.35fr_1fr] lg:items-end lg:gap-16">
           <p className="text-[10px] font-black uppercase tracking-[0.18em]">02 / Trabajos realizados</p>
-          <div className="flex flex-col gap-7 lg:flex-row lg:items-end lg:justify-between"><div><h2 className="max-w-5xl font-display text-[clamp(3.7rem,8vw,8rem)] font-semibold leading-[0.82] tracking-[-0.075em]">Marcas llevadas<br /><span className="font-serif font-normal italic text-violet">a la vida.</span></h2><div className="mt-7 flex gap-8 border-t border-black/15 pt-5"><p><strong className="font-display text-3xl">04</strong><span className="ml-2 text-[9px] font-black uppercase tracking-[0.14em] text-black/45">Proyectos</span></p><p><strong className="font-display text-3xl">29</strong><span className="ml-2 text-[9px] font-black uppercase tracking-[0.14em] text-black/45">Aplicaciones</span></p></div></div><p className="max-w-sm text-sm leading-relaxed text-black/55">Todo el archivo disponible, organizado por proyecto: identidad, papelería, rotulación, uniformes, entornos digitales y publicidad exterior.</p></div>
+          <div className="flex flex-col gap-7 lg:flex-row lg:items-end lg:justify-between"><div><h2 className="max-w-5xl font-display text-[clamp(3.7rem,8vw,8rem)] font-semibold leading-[0.82] tracking-[-0.075em]">Marcas llevadas<br /><span className="font-display font-semibold not-italic text-violet">a la vida.</span></h2><div className="mt-7 flex gap-8 border-t border-black/15 pt-5"><p><strong className="font-display text-3xl">04</strong><span className="ml-2 text-[9px] font-black uppercase tracking-[0.14em] text-black/45">Proyectos</span></p><p><strong className="font-display text-3xl">29</strong><span className="ml-2 text-[9px] font-black uppercase tracking-[0.14em] text-black/45">Aplicaciones</span></p></div></div><p className="max-w-sm text-sm leading-relaxed text-black/55">Todo el archivo disponible, organizado por proyecto: identidad, papelería, rotulación, uniformes, entornos digitales y publicidad exterior.</p></div>
         </div>
 
         <div id="work-case" key={currentProject.number} className="case-page scroll-mt-24" aria-live="polite">
@@ -324,7 +324,7 @@ function Services({ onSelect }) {
         <div className="mb-12 grid gap-8 border-t border-black/25 pt-6 lg:grid-cols-[0.35fr_1fr] lg:gap-16">
           <p className="text-[10px] font-black uppercase tracking-[0.18em]">01 / Servicios profesionales</p>
           <div className="grid gap-7 xl:grid-cols-[1fr_0.42fr] xl:items-end">
-            <h2 className="max-w-5xl font-display text-[clamp(3.7rem,8vw,8rem)] font-semibold leading-[0.82] tracking-[-0.075em]">Diseño que trabaja<br /><span className="font-serif font-normal italic text-violet">para el negocio.</span></h2>
+            <h2 className="max-w-5xl font-display text-[clamp(3.7rem,8vw,8rem)] font-semibold leading-[0.82] tracking-[-0.075em]">Diseño que trabaja<br /><span className="font-display font-semibold not-italic text-violet">para el negocio.</span></h2>
             <p className="max-w-md text-sm leading-relaxed text-black/55">Servicios de diseño gráfico con alcance definido, proceso claro y entregables preparados para publicar, presentar o producir.</p>
           </div>
         </div>
@@ -349,7 +349,7 @@ function Services({ onSelect }) {
                 </ul>
               </div>
               <div className="mt-auto pt-10">
-                <p className="border-t border-current/20 pt-5 font-serif text-xl italic leading-snug opacity-75">{service.result}</p>
+                <p className="border-t border-current/20 pt-5 font-display text-[clamp(1.1rem,1.8vw,1.55rem)] font-semibold not-italic leading-snug tracking-[-0.035em] opacity-75">{service.result}</p>
                 <a href="#contact" onClick={() => onSelect(service.title)} className="mt-6 inline-flex items-center gap-3 text-[9px] font-black uppercase tracking-[0.16em]"><span className="border-b border-current pb-1">Solicitar este servicio</span><Arrow /></a>
               </div>
             </article>
@@ -384,8 +384,8 @@ function About() {
           <div className="flex flex-col justify-between" data-reveal>
             <div>
               <p className="mb-10 text-[10px] font-black uppercase tracking-[0.18em] text-acid">03 / El diseñador</p>
-              <h2 className="font-display text-[clamp(3.3rem,7vw,7.5rem)] font-semibold leading-[0.85] tracking-[-0.075em]">El oficio primero.<br /><span className="font-serif font-normal italic text-white/35">El ego después.</span></h2>
-              <p className="mt-10 max-w-3xl font-serif text-[clamp(1.55rem,2.8vw,3rem)] leading-[1.18] text-white/85">Soy José Miguel Méndez. Diseño para que las marcas sean entendidas, reconocidas y elegidas.</p>
+              <h2 className="font-display text-[clamp(3.3rem,7vw,7.5rem)] font-semibold leading-[0.85] tracking-[-0.075em]">El oficio primero.<br /><span className="font-display font-semibold not-italic text-white/35">El ego después.</span></h2>
+              <p className="mt-10 max-w-3xl font-display text-[clamp(1.55rem,2.8vw,3rem)] font-medium leading-[1.18] tracking-[-0.035em] text-white/85">Soy José Miguel Méndez. Diseño para que las marcas sean entendidas, reconocidas y elegidas.</p>
               <p className="mt-7 max-w-2xl text-base leading-relaxed text-white/45">Mi trabajo combina concepto, tipografía, composición y ejecución. Puedo construir una dirección desde cero o integrarme a un sistema existente y elevarlo con consistencia, velocidad y atención al detalle.</p>
             </div>
             <div className="mt-14 grid gap-px overflow-hidden rounded-2xl bg-white/15 sm:grid-cols-3">
@@ -410,7 +410,7 @@ function Process() {
       <div className="mx-auto w-[min(92vw,1500px)]">
         <div className="mb-16 grid gap-8 border-t border-black/25 pt-6 lg:grid-cols-[0.35fr_1fr] lg:gap-16" data-reveal>
           <p className="text-[10px] font-black uppercase tracking-[0.18em]">04 / Proceso</p>
-          <h2 className="max-w-5xl font-display text-[clamp(3.7rem,8vw,8rem)] font-semibold leading-[0.82] tracking-[-0.075em]">Sin misterio.<br /><span className="font-serif font-normal italic text-black/35">Solo método.</span></h2>
+          <h2 className="max-w-5xl font-display text-[clamp(3.7rem,8vw,8rem)] font-semibold leading-[0.82] tracking-[-0.075em]">Sin misterio.<br /><span className="font-display font-semibold not-italic text-black/35">Solo método.</span></h2>
         </div>
         <ol className="grid border-l border-t border-black/20 sm:grid-cols-2 lg:grid-cols-4">
           {steps.map(([id,title,copy]) => <li key={id} className="group flex min-h-[20rem] flex-col border-b border-r border-black/20 p-6 transition duration-500 hover:bg-acid sm:min-h-[25rem]" data-reveal><span className="text-[9px] font-black">/{id}</span><div className="mt-auto"><h3 className="font-display text-4xl font-semibold tracking-[-0.06em]">{title}</h3><p className="mt-4 max-w-[17rem] text-sm leading-relaxed text-black/50 transition group-hover:text-black/70">{copy}</p></div></li>)}
@@ -442,7 +442,7 @@ function Contact({ selectedService, onServiceChange }) {
         <div className="grid gap-14 lg:grid-cols-[0.9fr_1.1fr] lg:gap-24">
           <div data-reveal>
             <p className="mb-8 text-[10px] font-black uppercase tracking-[0.18em]">05 / Iniciar proyecto</p>
-            <h2 className="font-display text-[clamp(4rem,9vw,9rem)] font-semibold leading-[0.76] tracking-[-0.085em]">Hagamos<br />algo que<br /><span className="font-serif font-normal italic">importe.</span></h2>
+            <h2 className="font-display text-[clamp(4rem,9vw,9rem)] font-semibold leading-[0.76] tracking-[-0.085em]">Hagamos<br />algo que<br /><span className="font-display font-semibold not-italic">importe.</span></h2>
             <div className="mt-12 flex flex-wrap gap-3">
               <a className="group rounded-full bg-black px-6 py-4 text-[10px] font-black uppercase tracking-[0.14em] text-white" href="mailto:polancodesign@gmail.com">Escribir a José <Arrow className="text-acid" /></a>
               <a className="group rounded-full border border-black/30 px-6 py-4 text-[10px] font-black uppercase tracking-[0.14em]" href="tel:+18492763532">+1 849 276 3532 <Arrow /></a>
