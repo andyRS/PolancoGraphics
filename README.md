@@ -33,7 +33,7 @@ El sitio compilado se genera en `dist/`.
 
 1. Importar `andyRS/PolancoGraphics` desde GitHub.
 2. Seleccionar `gh-pages` como rama de producción.
-3. No es necesario sobrescribir la configuración: `vercel.json` establece Vite, `npm run build` y `dist`.
+3. No es necesario sobrescribir la configuración: `vercel.json` instala también las dependencias de build y establece Vite, `npm run build` y `dist`.
 4. La versión de Node está fijada en `24.x` desde `package.json`.
 
 Después de conectar el repositorio, cada nuevo push a `gh-pages` generará un despliegue automático.
